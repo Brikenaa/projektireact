@@ -11,14 +11,14 @@ const Reducer = (state, action) => {
                 ...state,
                 token: action.payland.token,
             };
-        case "LANG": 
-            return {
-                ...state,
-                lang: action.payland.lang,
-            };
+        // case "LANG": 
+        //     return {
+        //         ...state,
+        //         lang: action.payland.lang,
+        //     };
             
-        default:
-            return state;
+        // default:
+        //     return state;
     }
 };
 

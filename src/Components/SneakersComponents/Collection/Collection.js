@@ -1,5 +1,5 @@
 import React from 'react';
-import './Collection.scss';
+import '../../Assets/styles/Collection.scss';
 import data from '../../Assets/dummydata/dummydata';
 import { Link } from 'react-router-dom';
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Home.scss";
+import "../../Assets/styles/Home.scss";
 import HomeImg from "../../Assets/firstImg.png";
 import data from "../../Assets/dummydata/dummydata";
 
@@ -47,9 +47,11 @@ const Home = () => {
       <div className="Home-wrapper">
         <div className="Home-text">
           <h3>SneakPeak</h3>
+          <br/>
           <h1>
             The ultimate <span id="orange">Sneak</span> shoe paradise
           </h1>
+          <br/>
           <p>
             Feel free to adapt these suggestions to set your specific context
             and branding

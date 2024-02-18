@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import './SinglePage.scss';
+import '../../Components/Assets/styles/SinglePage.scss';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import data from '../../Components/Assets/dummydata/dummydata';
@@ -107,9 +107,6 @@ const SinglePage = () => {
                     <span onClick={() => addToCard()} className='linki-prod'>
                       <button className="btn-description">Add to cart</button>
                     </span>
-                    <Link to="/" className='linki-prod'>
-                      <button className="btn-description wishlist">Add To wishlist</button>
-                    </Link>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './ShopAll.scss';
+import '../../Components/Assets/styles/ShopAll.scss';
 import data from '../../Components/Assets/dummydata/dummydata';
 import Navbar from '../../Components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
@@ -17,7 +17,7 @@ const ShopAll = () => {
     axios.get(apiUrl)
       .then((response) => {
         const combinedProducts = [...data.products, ...response.data];
-        setProducts(combinedProducts);
+        setProducts(combinedProducts.slice(0, 15));
         setFilteredProducts(combinedProducts);
         setLoading(false);
       })
@@ -85,7 +85,7 @@ const ShopAll = () => {
         <div className='simple-navbar'>
             <hr id="first"/>
             <p id="paragraf-footer">
-                Copyright by Albion Paqarizi 2023 All right reserved
+                Copyright &copy; 2024
         </p>
       </div>
     </>

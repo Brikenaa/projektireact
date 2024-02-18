@@ -2,7 +2,7 @@ import React, { createContext, useReducer } from "react";
 import Reducer from "./Reducer";
 
 const initialState = {
-    lang: localStorage.getItem("lang") || "sq",
+    // lang: localStorage.getItem("lang") || "sq",
     token: localStorage.getItem("token"),
     basket: localStorage.getItem("basket") ? (
         JSON.parse(localStorage.getItem("basket"))

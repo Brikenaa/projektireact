@@ -1,7 +1,8 @@
 import React, { useContext, useState } from 'react';
-import "./style.scss";
+import '../../Components/Assets/styles/Login.scss';
 import { Context } from '../../Context/Products';
 import { useNavigate } from 'react-router-dom';
+
 
 const Login = () => {
   const [state, dispatch] = useContext(Context);
@@ -53,5 +54,7 @@ const Login = () => {
     </div>
   )
 }
+
+
 
 export default Login;

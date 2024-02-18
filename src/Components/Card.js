@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Context } from '../../Context/Products';
+import { Context } from '../Context/Products';
 
 const Card = () => {
   const [state, dispatch] = useContext(Context);
@@ -13,6 +13,10 @@ const Card = () => {
       payland: { basket: newArr }
     });
   }
+  const totalPrice = state.basket.reduce((acc, curr) => acc + curr.retailPrice, 0);
+  const username=(localStorage.getItem('username') || '');
+
+
 
   return (
       <table className='card-table'>
@@ -38,6 +42,14 @@ const Card = () => {
             </tr>
           ))}
         </tbody>
+        <tfoot>
+      <tr>
+        <th colSpan="4">Total Price:</th>
+        <th>{totalPrice}&#x20AC;</th>
+        <th></th>
+      </tr>
+
+    </tfoot>
       </table>
   )
 }
